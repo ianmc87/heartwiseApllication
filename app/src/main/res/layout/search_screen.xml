@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/normalStyle"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="onTypeNormal"
+            android:text="@string/normStyle" />
+
+        <Button
+            android:id="@+id/hybridStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="onTypeHybrid"
+            android:text="@string/hybridStyle" />
+
+        <Button
+            android:id="@+id/satelliteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="onTypeSatellite"
+            android:text="@string/satelliteStyle" />
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="onZoom"
+            android:text="@string/zoomIn" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="onZoom"
+            android:text="@string/zoomOut" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="386dp"
+            android:layout_height="502dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            map:cameraTargetLat="52.246163"
+            map:cameraTargetLng="-7.140248"
+            map:cameraTilt="40"
+            map:cameraZoom="15"
+            tools:context="ie.app.heartwise.activities.SearchScreen" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/mapSearchField" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="onMapSearch"
+            android:text="@string/searchButton" />
+
+    </LinearLayout>
+</LinearLayout>

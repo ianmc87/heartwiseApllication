@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">HeartWise</string>
+    <string name="homeString">Home</string>
+    <string name="logoutString">Logout</string>
+    <string name="welcomeTag">Welcome,</string>
+    <string name="emptyString" />
+    <string name="loginButton">Login</string>
+    <string name="registerButton">Register</string>
+    <string name="TVname">Please enter your name</string>
+    <string name="TVusername">Please enter a username</string>
+    <string name="TVpassword">Please enter a password</string>
+    <string name="TVpassword2">Please confirm password</string>
+    <string name="RegButton">Register</string>
+    <string name="idPlaceholder">idPlaceholder</string>
+    <string name="locationPlaceholder">locationPlaceholder</string>
+    <string name="conditionPlaceholder">conditionPlaceholder</string>
+    <string name="datePlaceholder">datePlaceholder</string>
+    <string name="timePlaceholder">timePlaceholder</string>
+    <string name="TVid">Please enter AED ID</string>
+    <string name="TVlocation">Please enter AED location</string>
+    <string name="TVcondition">Please select AED condition</string>
+    <string name="TVdate">Please enter service date</string>
+    <string name="TVtime">Please enter service time</string>
+    <string name="submitButton">Submit</string>
+    <string name="listButton">Data List</string>
+
+    <string-array name="conditionTypes">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Satisfactory</item>
+        <item>Excellent</item>
+    </string-array>
+
+    <string name="title_activity_search_screen">Map</string>
+    <string name="mapSearchField">Search location</string>
+    <string name="searchButton">Search</string>
+    <string name="mapStyle">Style</string>
+    <string name="normalStyle">Normal</string>
+    <string name="hybridStyle">Hybrid</string>
+    <string name="zoomIn">+</string>
+    <string name="zoomOut">-</string>
+    <string name="radioGood">Good</string>
+    <string name="radioBad">Bad</string>
+    <string name="radioPoor">Poor</string>
+    <string name="radioFair">Fair</string>
+    <string name="radioExcellent">Excellent</string>
+    <string name="satelliteStyle">Satellite</string>
+    <string name="normStyle">Norm</string>
+    <string name="TVlat">Please enter AED latitude</string>
+    <string name="TVlong">Please enter AED longitude</string>
+    <string name="latitudePlaceholder">latitudePlaceholder</string>
+    <string name="longitudePlaceholder">longitudePlaceholder</string>
+</resources>

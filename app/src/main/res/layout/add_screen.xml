@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVid"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/idET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVlocation"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/locationET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVcondition"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="25dp">
+
+                        <RadioButton
+                            android:id="@+id/radioPoor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/radioPoor" />
+
+                        <RadioButton
+                            android:id="@+id/radioFair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/radioFair" />
+
+                        <RadioButton
+                            android:id="@+id/radioGood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/radioGood" />
+
+                        <RadioButton
+                            android:id="@+id/radioExcellent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radioExcellent" />
+
+                </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVdate"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dateET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVtime"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/timeET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVlat"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/latitudeET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TVlong"
+            android:textSize="18sp"
+            android:inputType="numberDecimal|numberSigned"/>
+
+        <EditText
+            android:id="@+id/longitudeET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudeET"
+            android:inputType="numberDecimal|numberSigned"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submitButton"
+            android:textColor="#ffffff" />
+
+</LinearLayout>
+

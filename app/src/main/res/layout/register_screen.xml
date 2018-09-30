@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/TVname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TVname"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/RegName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="#696969" />
+
+    <TextView
+        android:id="@+id/TVusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TVusername"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/RegUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RegPassword1"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="#696969" />
+
+    <TextView
+        android:id="@+id/TVpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TVpassword"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/RegPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#696969" />
+
+    <TextView
+        android:id="@+id/TVpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TVpassword2"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/RegPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegPassword1"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#696969" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/RegButton" />
+</LinearLayout>
